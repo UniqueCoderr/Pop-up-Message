@@ -1,0 +1,106 @@
+body{
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+    background-image: url("https://images.unsplash.com/photo-1560762484-813fc97650a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80");
+    background-size: cover;
+    font-family: sans-serif;
+    transition: filter 0.7s;
+}
+
+h1{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 60px;
+}
+.btn{
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: orangered;
+    border: none;
+    box-shadow: 2px 2px 4px rgba(0,0,0,.3);
+}
+.btn:hover{
+    filter: brightness(.9);
+}
+
+.popup{
+    position: fixed;
+    width: 400px;
+    height: 150px;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    background-image: url("https://images.unsplash.com/uploads/141103282695035fa1380/95cdfeef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1130&q=80");
+    background-size: cover;
+    padding: 40px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,.3);
+    opacity: 1;
+    transition: all .7s;
+    
+}
+
+.active.container{
+    filter: blur(8px) brightness(.6);
+    
+    
+
+
+}
+
+.active.popup{
+    visibility: hidden;
+    /* transition purpose */
+    opacity: 0;
+    top: 10%; 
+}
+
+.popup h1{
+    color: rgb(129, 34, 253);
+    font-size: 40px;
+    font-family: sans-serif;
+}
+
+label{
+    font-size: 25px;
+    color:rgb(8, 8, 8); 
+    font-family: sans-serif;
+    margin-bottom:10px;
+    font-weight: 600;
+}
+
+.input{
+    font-size: 25px;
+    padding: 10px;
+    
+}
+
+.btn1{
+    padding: 10px;
+    background-color: orangered;
+    font-size: 20px;
+    margin: 10px 0px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+}
+
+.close{
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    cursor: pointer;
+}
